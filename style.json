@@ -33,10 +33,8 @@
         "name": "Bridges"
       }
     },
-    "mapbox:autocomposite": false,
-    "openmaptiles:version": "3.x",
-    "openmaptiles:mapbox:owner": "openmaptiles",
-    "openmaptiles:mapbox:source:url": "mapbox://openmaptiles.805mi4we"
+    "mapbox:autocomposite": true,
+    "openmaptiles:version": "3.x"
   },
   "center": [
     13.997549878203387,
@@ -47,12 +45,12 @@
   "pitch": 0,
   "sources": {
     "openmaptiles": {
-      "type": "vector",
-      "url": "https://free.tilehosting.com/data/v3.json?key=tXiQqN3lIgskyDErJCeY"
+      "url": "mapbox://openmaptiles.805mi4we",
+      "type": "vector"
     }
   },
-  "sprite": "https://klokantech.github.io/oldmapsonline-gl-style/sprite",
-  "glyphs": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+  "sprite": "mapbox://sprites/openmaptiles/ciwf7h9k400882pmt3ud8z8td",
+  "glyphs": "mapbox://fonts/openmaptiles/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -3258,5 +3256,9 @@
       }
     }
   ],
-  "id": "ciwf7h9k400882pmt3ud8z8td"
+  "created": "2016-12-07T17:25:43.990Z",
+  "id": "ciwf7h9k400882pmt3ud8z8td",
+  "modified": "2016-12-08T11:41:30.337Z",
+  "owner": "openmaptiles",
+  "draft": false
 }
