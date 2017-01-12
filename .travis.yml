@@ -14,8 +14,7 @@ script:
 - cd gl-style-package-spec
 - git checkout maputnik
 - bash ./task/run.sh
-- cd build
-- ls
+- echo $TRAVIS_BRANCH
 env:
   global:
   - secure: GuLFb/d5K19DtadULrSYKJPQ2F3BSYdvlJu7GWvaS260E1ZymGrEhr5XJ1jZ+CZKzU1Cgn+RDt2uNqL9caWLBSwAaSrmOCnBUoh2d9krmSiyEb9rQxdzIczTOjUDyzlSuhPFEh1GeriRkTXuIsamXAZRuqYI/fhvcqadMUyq0cSDFYHd3+ihG7oijn3uJkmFOfpRoaDvTumrapt1LhUOnjXDaig2WrFtQykoQ+UcHpGjguhM95XO0V+J0n61F9Pflq5Si0sag5BUnSavYrNj3V22TowV/w4EyiD31rXkD6D3GcIxFyXkJ2oADlK2P2j8zdX2AyV1CPV5dAey4xiZmkQWvmY+rscxkp7AjZ/PsuslPyHyjXcEUp7z5jejKbRLPBdvLSgE5d+Jav3jVEXkBvek/C3d69TJt0Z/9iVwaJcTjCd3nvBtkDxm/3hd0y6DN7+wOmykrACYvWQQgiYt0XegsgAcMLb8bgnwGrIoLi/IVwq/wWp49H9p0/vf1rilv5+aBvKzPA80o8qUfYDYxDgQRqpXu68f2p+LV9SVRxYaJT0eiUB37lrwdrL7QpY7Seyxlv9hLnpRezeiU/oj8sfCgZbDudeog5Vl5sHyI4BKL5dmGg3ymeQG5ir5gfjBOdkFyA3L9qhYOJ452QE6onHHjF513yF1FvZOC8Y+j04=
@@ -23,7 +22,7 @@ deploy:
   provider: releases
   api_key:
     secure: 2RyOW5Ao46/rPGE7YoA2vzfWPaioGyg2epxUdjTdCoYEBxuoQt6SqNxisFWYa9k17PwBZ++3Hb7B7CKcAa3NbQ9JUHEu1X0ZxONS0AueMZHmQ0E95fMxM8ezB40SNj2DDf7zq2u+EG1UH6i1aG7OK4Yuxws+LoPPkwMW3ecBrSzRb8GM+4yIK7rANh1NhhVrYUZ4RrCn7Ze1grUl8/2hDiS3djIRoFafKdmMF3W0Xk+zawB4oJEdqtAPJmFfowsnEMZkRaaSK+oEx5Kos9nv9qvLMk5fRZaXQzl6+qpnIahmUOcqGYQWQvRKW/13d3TsG/N67eXGqUA/e8Scr8uufSiRHSDi/I4Hz/eg8YAsrv5SC4NlwSofA7xkfmZByoff/+QKHwaQbMcR56W34WpAjJSD81XULPqoxxXdJxI1VrNeLglH1/ZjAhiwFIUVBH6dqIHU4bQSuWpjCJ2J0yNnaa7WREFu9vti19r7d8ZpAKq6xxqtBEuIz/fvImJgirgNZHBHaakRMv2gFitYXy3Ib4WjPZBAhikJ4pt8ZK7ldxK6/g+MDDOo2k3Yc5Rd5/0MQq5xJAzxu1OxDoy7OWk9KB12MrKhXnJmOptq86XbLJGL8aHfHgDosafhZyKPygqupQQzYwBWFoaR+s9uPr4BiibE+UsF+FFDY4cyVeTVTCQ=
-  file: build/style-cdn.json
+  file: gl-style-package-spec/build/style-cdn.json
   skip_cleanup: true
   on:
     repo: jirik/osm-bright-gl-style
