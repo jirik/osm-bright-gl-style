@@ -29,4 +29,5 @@ deploy:
   file: build/style-cdn.json
   skip_cleanup: true
   on:
+    repo: jirik/osm-bright-gl-style
     tags: true
