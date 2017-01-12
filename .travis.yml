@@ -12,11 +12,8 @@ addons:
 script:
 - git clone https://github.com/klokantech/gl-style-package-spec.git
 - cd gl-style-package-spec
-- git checkout maputnik
+- git checkout release
 - bash ./task/run.sh
-- if [ -n "$TRAVIS_TAG" ]; then
--   zip -r build/style.zip build/*
-- fi
 - cd build
 - ls
 #- echo $TRAVIS_BRANCH
@@ -30,7 +27,7 @@ deploy:
   provider: releases
   api_key:
     secure: 2RyOW5Ao46/rPGE7YoA2vzfWPaioGyg2epxUdjTdCoYEBxuoQt6SqNxisFWYa9k17PwBZ++3Hb7B7CKcAa3NbQ9JUHEu1X0ZxONS0AueMZHmQ0E95fMxM8ezB40SNj2DDf7zq2u+EG1UH6i1aG7OK4Yuxws+LoPPkwMW3ecBrSzRb8GM+4yIK7rANh1NhhVrYUZ4RrCn7Ze1grUl8/2hDiS3djIRoFafKdmMF3W0Xk+zawB4oJEdqtAPJmFfowsnEMZkRaaSK+oEx5Kos9nv9qvLMk5fRZaXQzl6+qpnIahmUOcqGYQWQvRKW/13d3TsG/N67eXGqUA/e8Scr8uufSiRHSDi/I4Hz/eg8YAsrv5SC4NlwSofA7xkfmZByoff/+QKHwaQbMcR56W34WpAjJSD81XULPqoxxXdJxI1VrNeLglH1/ZjAhiwFIUVBH6dqIHU4bQSuWpjCJ2J0yNnaa7WREFu9vti19r7d8ZpAKq6xxqtBEuIz/fvImJgirgNZHBHaakRMv2gFitYXy3Ib4WjPZBAhikJ4pt8ZK7ldxK6/g+MDDOo2k3Yc5Rd5/0MQq5xJAzxu1OxDoy7OWk9KB12MrKhXnJmOptq86XbLJGL8aHfHgDosafhZyKPygqupQQzYwBWFoaR+s9uPr4BiibE+UsF+FFDY4cyVeTVTCQ=
-  file: build/style.zip
+  file: build/${TRAVIS_TAG}.zip
   skip_cleanup: true
   on:
     repo: jirik/osm-bright-gl-style
