@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="16.688425"
-   height="17"
+   height="19.000004"
    id="svg3844"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="16"
-     inkscape:cx="28.180446"
-     inkscape:cy="0.40814351"
+     inkscape:cx="17.961697"
+     inkscape:cy="0.40815014"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -50,7 +50,7 @@
        enabled="true"
        snapvisiblegridlinesonly="true"
        originx="-301"
-       originy="-134"
+       originy="-133.99999"
        spacingy="0.5px"
        spacingx="0.5px" />
   </sodipodi:namedview>
@@ -70,10 +70,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-301,-901.36218)">
+     transform="translate(-301,-899.36218)">
     <g
        id="g4201"
-       transform="matrix(0.32020698,0,0,0.32020698,186.73557,608.78432)">
+       transform="matrix(0.32020698,0,0,0.35787845,186.73557,572.36334)">
       <path
          sodipodi:nodetypes="sssssssss"
          d="m 408.96315,918.16682 c 0,-2.45811 -1.97394,-4.452 -4.40745,-4.452 l -43.30272,0 c -2.43511,0 -4.40745,1.99389 -4.40745,4.452 l 0,44.18666 c 0,2.45811 1.97393,4.452 4.40745,4.452 l 43.30272,0 c 2.43351,0 4.40745,-1.99389 4.40745,-4.452 z"
