@@ -16,6 +16,7 @@ addons:
 script:
 - git clone https://github.com/klokantech/gl-style-package-spec.git
 - cd gl-style-package-spec
+- git checkout lang_fallback
 - bash ./task/run.sh
 env:
   global:
