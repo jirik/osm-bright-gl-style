@@ -7,7 +7,7 @@
   ],
   "decorators": [
     {
-      "layout.text-field": "{name:latin}\n {name:nonlatin}",
+      "layout.text-field": "{name:latin}\n{name:nonlatin}",
       "filter-all-part": [
         "!has",
         "name:en"
@@ -15,7 +15,7 @@
     },
     {
       "layer-name-postfix": "en",
-      "layout.text-field": "{name:en}\n {name:nonlatin}",
+      "layout.text-field": "{name:en}\n{name:nonlatin}",
       "filter-all-part": [
         "has",
         "name:en"
