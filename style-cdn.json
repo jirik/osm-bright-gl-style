@@ -48,7 +48,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://free.tilehosting.com/data/v3.json?key=RiS4gsgZPZqeeMlIyxFo"
+      "url": "http://test.openmaptiles.com:8036/data/v3.json"
     }
   },
   "sprite": "https://jirik.github.io/osm-bright-gl-style/sprite",
